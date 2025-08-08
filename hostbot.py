@@ -3,7 +3,10 @@ from telebot import types
 from datetime import datetime, timedelta
 
 BOT_TOKEN = os.getenv("8299348274:AAF_8StvDGF1vlFOyOwhpPk9yhEnKGQ2exQ")  # ✅ Fixed: Load from correct env variable name
-OWNER_ID = 8138742825
+import os
+
+BOT_TOKEN = os.getenv("8299348274:AAF_8StvDGF1vlFOyOwhpPk9yhEnKGQ2exQ")
+OWNER_ID = os.getenv("8138742825")
 MAX_FREE_UPLOADS = 2
 FREE_USER_LIMIT = 2
 VIP_USER_LIMIT = 10
